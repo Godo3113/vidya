@@ -44,10 +44,11 @@ SpriteAtlas:
     packables:
     - {fileID: 102900000, guid: 8af56c36f6542e14fb74e971b3ca8ce5, type: 3}
     - {fileID: 102900000, guid: 3d89168f91f033d4fbc7b6e9a531db7f, type: 3}
-    totalSpriteSurfaceArea: 943900
+    totalSpriteSurfaceArea: 948554
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+  - {fileID: 21300000, guid: 2db9d3504f3aec642b03dc85ea2ee00c, type: 3}
   - {fileID: -7069517070965200709, guid: 5b9ee1c0aff2bbe42956b432d34c65b8, type: 3}
   - {fileID: 4515089718078482301, guid: 5b9ee1c0aff2bbe42956b432d34c65b8, type: 3}
   - {fileID: -2314140015912207153, guid: 5b9ee1c0aff2bbe42956b432d34c65b8, type: 3}
@@ -287,6 +288,10 @@ SpriteAtlas:
   - {fileID: -2431439944167368855, guid: 9e7fd267eb7f4854d87e474a21ee2f46, type: 3}
   - {fileID: 7274838496166343488, guid: 9e7fd267eb7f4854d87e474a21ee2f46, type: 3}
   - {fileID: -8506932439865520012, guid: 9e7fd267eb7f4854d87e474a21ee2f46, type: 3}
+  - {fileID: -6005185422957782677, guid: 50d364b7b73e32743b2378faf990c1d0, type: 3}
+  - {fileID: 8226939732373364731, guid: 50d364b7b73e32743b2378faf990c1d0, type: 3}
+  - {fileID: -1295248278954521595, guid: 50d364b7b73e32743b2378faf990c1d0, type: 3}
+  - {fileID: -6240920395460407647, guid: 50d364b7b73e32743b2378faf990c1d0, type: 3}
   - {fileID: -872947984015748712, guid: ef95180821d53ca44971b0ad6780bd9d, type: 3}
   - {fileID: 4004008643541842471, guid: ef95180821d53ca44971b0ad6780bd9d, type: 3}
   - {fileID: 6703265110210787806, guid: ef95180821d53ca44971b0ad6780bd9d, type: 3}
@@ -1402,6 +1407,7 @@ SpriteAtlas:
   - {fileID: 6469460937200175538, guid: 74e8ce5fac50d324ea0228c8ee70ef03, type: 3}
   - {fileID: 2924928888349640390, guid: 74e8ce5fac50d324ea0228c8ee70ef03, type: 3}
   m_PackedSpriteNamesToIndex:
+  - alien
   - lancer1_11
   - lancer1_10
   - lancer1_2
@@ -1641,6 +1647,10 @@ SpriteAtlas:
   - character_73
   - character_70
   - character_71
+  - FactionIcons_0
+  - FactionIcons_1
+  - FactionIcons_2
+  - FactionIcons_3
   - modified gfx melee sprites_15
   - modified gfx melee sprites_14
   - modified gfx melee sprites_13

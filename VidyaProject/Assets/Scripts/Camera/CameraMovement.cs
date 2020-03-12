@@ -11,7 +11,7 @@ public class CameraMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+		transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
     }
 
     void LateUpdate() // Updates last so the camera always goes after the player

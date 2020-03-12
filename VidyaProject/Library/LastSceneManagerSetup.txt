@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Battle_Forest25.unity
+- path: Assets/Scenes/MainWorld.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

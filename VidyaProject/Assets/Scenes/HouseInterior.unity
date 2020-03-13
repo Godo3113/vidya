@@ -1794,6 +1794,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1921387223222651940, guid: 75c44bcdf974dae4d9426881d7aa4f6f,
+        type: 3}
+      propertyPath: signalEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeContext
+      objectReference: {fileID: 0}
     - target: {fileID: 1921387223222651960, guid: 75c44bcdf974dae4d9426881d7aa4f6f,
         type: 3}
       propertyPath: startingPosition
@@ -1860,7 +1865,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 75c44bcdf974dae4d9426881d7aa4f6f, type: 3}
 --- !u!1001 &1168125152
 PrefabInstance:
@@ -1978,6 +1984,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5403395426183790159, guid: 5d8533c4d22c3354692767735686c486,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d8533c4d22c3354692767735686c486, type: 3}

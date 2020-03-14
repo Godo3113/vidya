@@ -5,7 +5,7 @@ using UnityEngine;
 public class heart : Powerup
 {
     public FloatValue playerHealth;
-    public FloatValue heartContainers;
+    //public FloatValue heartContainers;
     public float amountToIncrease;
 
     // Start is called before the first frame update
@@ -24,11 +24,18 @@ public class heart : Powerup
     {
         if(other.CompareTag("Player") && !other.isTrigger)
         {
-            playerHealth.RuntimeValue += amountToIncrease;
-            if(playerHealth.initialValue > heartContainers.RuntimeValue * 2f)
+            if((playerHealth.RuntimeValue += amountToIncrease) >= playerHealth.initialValue)
             {
-                playerHealth.initialValue = heartContainers.RuntimeValue * 2f;
+                playerHealth.RuntimeValue = playerHealth.initialValue;
             }
+            else
+            {
+                playerHealth.RuntimeValue += amountToIncrease;
+            }
+            //if(playerHealth.initialValue > heartContainers.RuntimeValue * 2f)
+            //{
+            //    playerHealth.initialValue = heartContainers.RuntimeValue * 2f;
+            //}
             powerupSignal.Raise(); // Update IA with new health
             Destroy(this.gameObject);
         }

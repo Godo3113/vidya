@@ -5515,17 +5515,17 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 389624147, guid: 260a17f7a22609b4eb65b35db40f5f22, type: 3}
       propertyPath: fadeWait
-      value: 0.33
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 389624147, guid: 260a17f7a22609b4eb65b35db40f5f22, type: 3}
       propertyPath: cameraMax
       value: 
-      objectReference: {fileID: 11400000, guid: 8f987377eb5e1474c8bd1e8dfa216410,
+      objectReference: {fileID: 11400000, guid: 961e743eef6086a4eb16c8c5b80e1264,
         type: 2}
     - target: {fileID: 389624147, guid: 260a17f7a22609b4eb65b35db40f5f22, type: 3}
       propertyPath: cameraMin
       value: 
-      objectReference: {fileID: 11400000, guid: a2ffe29f84a6ad942bffca8f50c73378,
+      objectReference: {fileID: 11400000, guid: b6557a88634fda44ebe9d7070894ada0,
         type: 2}
     - target: {fileID: 3639107364355258630, guid: 260a17f7a22609b4eb65b35db40f5f22,
         type: 3}

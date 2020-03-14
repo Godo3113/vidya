@@ -566,8 +566,9 @@ MonoBehaviour:
   currentHealth: {fileID: 11400000, guid: e0d67b5b73b41884ca0d99754d1fb4b2, type: 2}
   playerHealthSignal: {fileID: 11400000, guid: 1f88580925d78e942b35fc99c2928ba9, type: 2}
   startingPosition: {fileID: 0}
-  playerInventory: {fileID: 0}
+  playerInventory: {fileID: 11400000, guid: 18a084f66392c7a4eb765c9b159d17cc, type: 2}
   receivedItemSprite: {fileID: 0}
+  playerHit: {fileID: 0}
 --- !u!61 &1921387223222651963
 BoxCollider2D:
   m_ObjectHideFlags: 0

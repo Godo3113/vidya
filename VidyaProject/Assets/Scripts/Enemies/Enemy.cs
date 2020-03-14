@@ -12,12 +12,19 @@ public enum EnemyState
 
 public class Enemy : MonoBehaviour
 {
+    [Header("State Machine")]
     public EnemyState currentState;
+
+    [Header("Enemy Stats")]
     public FloatValue maxHealth;
     public float health;
     public string enemyName;
     public int baseAttack;
     public float moveSpeed;
+
+    [Header("Death Effects")]
+    public GameObject deathEffect;
+    private float deathEffectDelay = 1f;
 
     private void Awake() 
     {
@@ -29,9 +36,20 @@ public class Enemy : MonoBehaviour
         health -= damage;
         if(health <= 0)
         {
+            DeathEffect();
             this.gameObject.SetActive(false);
         }
     }
+
+    public void DeathEffect()
+    {
+        if(deathEffect != null)
+        {
+            GameObject effect = Instantiate(deathEffect, transform.position, Quaternion.identity);
+            Destroy(effect, deathEffectDelay);
+        }
+    }
+
     public void Knock(Rigidbody2D myRigidbody, float knockTime, float damage)
     {
         StartCoroutine(KnockCo(myRigidbody, knockTime));

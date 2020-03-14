@@ -1338,6 +1338,11 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 5403395426183790159, guid: 5d8533c4d22c3354692767735686c486,
+        type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d8533c4d22c3354692767735686c486, type: 3}
 --- !u!114 &685061465 stripped
@@ -1600,6 +1605,16 @@ PrefabInstance:
       propertyPath: playerPosition.y
       value: -7
       objectReference: {fileID: 0}
+    - target: {fileID: 389624147, guid: 260a17f7a22609b4eb65b35db40f5f22, type: 3}
+      propertyPath: cameraMax
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f987377eb5e1474c8bd1e8dfa216410,
+        type: 2}
+    - target: {fileID: 389624147, guid: 260a17f7a22609b4eb65b35db40f5f22, type: 3}
+      propertyPath: cameraMin
+      value: 
+      objectReference: {fileID: 11400000, guid: a2ffe29f84a6ad942bffca8f50c73378,
+        type: 2}
     - target: {fileID: 3639107364355258630, guid: 260a17f7a22609b4eb65b35db40f5f22,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1658,8 +1673,14 @@ PrefabInstance:
     - target: {fileID: 5547168216751661435, guid: 260a17f7a22609b4eb65b35db40f5f22,
         type: 3}
       propertyPath: m_Name
-      value: Scene Transition
+      value: MainWorld Transition
       objectReference: {fileID: 0}
+    - target: {fileID: 5547168216751661435, guid: 260a17f7a22609b4eb65b35db40f5f22,
+        type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000,
+        type: 0}
     - target: {fileID: 7461493373216842499, guid: 260a17f7a22609b4eb65b35db40f5f22,
         type: 3}
       propertyPath: m_Offset.y

@@ -149,8 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 0}
-  contextOn: {fileID: 11400000, guid: 7b141d3e0d8b5314fb1e90084c427888, type: 2}
-  contextOff: {fileID: 11400000, guid: 34d6828d46c94c44bbc71346f288c762, type: 2}
+  context: {fileID: 0}
   playerInRange: 0
   dialogText: {fileID: 0}
   dialog: "\xA1Welcome to the Godolands!"

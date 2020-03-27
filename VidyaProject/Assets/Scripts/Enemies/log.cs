@@ -6,10 +6,13 @@ public class log : Enemy
 {
 
     public Rigidbody2D myRigidbody;
+
+    [Header("Target Variables")]
     public Transform target;
     public float chaseRadius;
     public float attackRadius;
-    public Transform homePosition;
+
+    [Header("Animator")]
     public Animator anim;
 
     // Start is called before the first frame update
@@ -32,7 +35,8 @@ public class log : Enemy
         if(Vector3.Distance(target.position, transform.position) <= chaseRadius 
             && Vector3.Distance(target.position, transform.position) > attackRadius)
         {
-            if(currentState == EnemyState.idle || currentState == EnemyState.walk)
+            if(currentState == EnemyState.idle || currentState == EnemyState.walk 
+                && currentState != EnemyState.stagger)
             {
                 Vector3 temp = Vector3.MoveTowards(transform.position, target.position,
                 moveSpeed * Time.deltaTime); // deltaTime [0,1] amount of ticks since last frame
@@ -50,7 +54,7 @@ public class log : Enemy
         }
     }
 
-    private void SetAnimFloat(Vector2 setVector)
+    public void SetAnimFloat(Vector2 setVector)
     {
         anim.SetFloat("moveX", setVector.x);
         anim.SetFloat("moveY", setVector.y);
@@ -82,7 +86,7 @@ public class log : Enemy
         }
     }
 
-    private void ChangeState(EnemyState newState)
+    public void ChangeState(EnemyState newState)
     {
         if (currentState != newState)
         {

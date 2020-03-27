@@ -171,13 +171,14 @@ MonoBehaviour:
   enemyName: Larry the Log
   baseAttack: 1
   moveSpeed: 1.5
+  homePosition: {x: 0, y: 0}
   deathEffect: {fileID: 2989198635459751573, guid: d5637ba8be267684fb60a997700264b7,
     type: 3}
+  thisLoot: {fileID: 0}
   myRigidbody: {fileID: 0}
   target: {fileID: 0}
   chaseRadius: 4
   attackRadius: 1.2
-  homePosition: {fileID: 0}
   anim: {fileID: 116376351432696229}
 --- !u!61 &116376351432695899
 BoxCollider2D:

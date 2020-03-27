@@ -5,23 +5,34 @@ using UnityEngine.UI;
 
 public class treasureChest : ContextTrigger
 {
+    [Header("Contents")]
     public Item contents;
     public Inventory playerInventory;
     public bool isOpen;
+    public BoolValue storedOpen;
+
+    [Header("Signals and Dialog")]
     public Signal raiseItem;
     public Text dialogText;
+
+    [Header("Animation")]
     private Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+        isOpen = storedOpen.RuntimeValue;
+        if(isOpen)
+        {
+            anim.SetBool("opened", true);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && playerInRange)
+        if(Input.GetButtonDown("interact") && playerInRange)
         {
             if(!isOpen)
             {
@@ -44,6 +55,7 @@ public class treasureChest : ContextTrigger
         context.Raise();
         isOpen = true;
         anim.SetBool("opened", true); // Variable for the open chest animation
+        storedOpen.RuntimeValue = isOpen;
     }
 
     public void ChestAlreadyOpen()

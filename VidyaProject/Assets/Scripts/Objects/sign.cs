@@ -19,7 +19,7 @@ public class sign : ContextTrigger
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && playerInRange)
+        if(Input.GetButtonDown("interact") && playerInRange)
         {
             if(dialogBox.activeInHierarchy)
             {

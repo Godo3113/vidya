@@ -44,7 +44,7 @@ SpriteAtlas:
     packables:
     - {fileID: 102900000, guid: 8af56c36f6542e14fb74e971b3ca8ce5, type: 3}
     - {fileID: 102900000, guid: 3d89168f91f033d4fbc7b6e9a531db7f, type: 3}
-    totalSpriteSurfaceArea: 738221
+    totalSpriteSurfaceArea: 754605
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -595,6 +595,22 @@ SpriteAtlas:
   - {fileID: 8226939732373364731, guid: 50d364b7b73e32743b2378faf990c1d0, type: 3}
   - {fileID: -1295248278954521595, guid: 50d364b7b73e32743b2378faf990c1d0, type: 3}
   - {fileID: -6240920395460407647, guid: 50d364b7b73e32743b2378faf990c1d0, type: 3}
+  - {fileID: -1861396428348373837, guid: 98e338b7289639b40833db186fe9a510, type: 3}
+  - {fileID: 1664357772287024801, guid: 98e338b7289639b40833db186fe9a510, type: 3}
+  - {fileID: -3264722998049715623, guid: 98e338b7289639b40833db186fe9a510, type: 3}
+  - {fileID: -964824239653993824, guid: 98e338b7289639b40833db186fe9a510, type: 3}
+  - {fileID: 7269522917121967659, guid: 98e338b7289639b40833db186fe9a510, type: 3}
+  - {fileID: -7423335518844729702, guid: 98e338b7289639b40833db186fe9a510, type: 3}
+  - {fileID: -8664327905045170009, guid: 98e338b7289639b40833db186fe9a510, type: 3}
+  - {fileID: 770891633333027474, guid: 98e338b7289639b40833db186fe9a510, type: 3}
+  - {fileID: -1242360182464875364, guid: 98e338b7289639b40833db186fe9a510, type: 3}
+  - {fileID: 7901955918156383551, guid: 98e338b7289639b40833db186fe9a510, type: 3}
+  - {fileID: -2150753145709587267, guid: 98e338b7289639b40833db186fe9a510, type: 3}
+  - {fileID: 5456910102184981033, guid: 98e338b7289639b40833db186fe9a510, type: 3}
+  - {fileID: 8832801181025377327, guid: 98e338b7289639b40833db186fe9a510, type: 3}
+  - {fileID: 7505759885031975168, guid: 98e338b7289639b40833db186fe9a510, type: 3}
+  - {fileID: 3372163455729612445, guid: 98e338b7289639b40833db186fe9a510, type: 3}
+  - {fileID: 8555756170139209410, guid: 98e338b7289639b40833db186fe9a510, type: 3}
   - {fileID: -872947984015748712, guid: ef95180821d53ca44971b0ad6780bd9d, type: 3}
   - {fileID: 4004008643541842471, guid: ef95180821d53ca44971b0ad6780bd9d, type: 3}
   - {fileID: 6703265110210787806, guid: ef95180821d53ca44971b0ad6780bd9d, type: 3}
@@ -2373,6 +2389,22 @@ SpriteAtlas:
   - FactionIcons_1
   - FactionIcons_2
   - FactionIcons_3
+  - skeleton_3
+  - skeleton_2
+  - skeleton_1
+  - skeleton_0
+  - skeleton_7
+  - skeleton_6
+  - skeleton_5
+  - skeleton_4
+  - skeleton_9
+  - skeleton_8
+  - skeleton_14
+  - skeleton_15
+  - skeleton_12
+  - skeleton_13
+  - skeleton_10
+  - skeleton_11
   - modified gfx melee sprites_15
   - modified gfx melee sprites_14
   - modified gfx melee sprites_13

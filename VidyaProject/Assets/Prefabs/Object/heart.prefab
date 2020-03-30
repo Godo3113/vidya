@@ -117,6 +117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerupSignal: {fileID: 11400000, guid: 1f88580925d78e942b35fc99c2928ba9, type: 2}
   playerHealth: {fileID: 11400000, guid: e0d67b5b73b41884ca0d99754d1fb4b2, type: 2}
+  heartContainers: {fileID: 11400000, guid: 0ec4a519a2fd8f44884f9865063c3cf0, type: 2}
   amountToIncrease: 1
 --- !u!61 &1618458175781982611
 BoxCollider2D:

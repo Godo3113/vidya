@@ -42,6 +42,11 @@ public class Room : MonoBehaviour
         }
     }
 
+    public void OnDisable()
+    {
+        virtualCamera.SetActive(false);
+    }
+
     void ChangeActivation(Component component, bool activation)
     {
         component.gameObject.SetActive(activation);

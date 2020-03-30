@@ -21,8 +21,9 @@ public class HeartManager : MonoBehaviour
 
     public void UpdateHearts()
     {
+        InitHearts(); // Check if any new hearts have been added
         float tempHealth = playerCurrentHealth.RuntimeValue / 2; // Half a heart is 1 hit point
-        for (int i = 0; i < heartContainers.initialValue; i++)
+        for (int i = 0; i < heartContainers.RuntimeValue; i++)
         {
             if(i <= tempHealth-1)
             {
@@ -41,7 +42,7 @@ public class HeartManager : MonoBehaviour
 
     public void InitHearts()
     {
-        for(int i = 0; i < heartContainers.initialValue; i ++)
+        for(int i = 0; i < heartContainers.RuntimeValue; i ++)
         {
             hearts[i].gameObject.SetActive(true);
             hearts[i].sprite = fullHeart;

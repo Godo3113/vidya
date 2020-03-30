@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 859767561923619309}
   - component: {fileID: 859767561923619306}
   - component: {fileID: 859767561923619307}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: down hitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,9 +93,9 @@ GameObject:
   - component: {fileID: 859767561937633659}
   - component: {fileID: 859767561937633658}
   - component: {fileID: 859767561937633653}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: skeletonLancer
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -228,7 +228,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0055445433, y: 0.15524673}
+  m_Offset: {x: 0.003471136, y: 0.08681536}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -239,7 +239,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.64714265, y: 1.2015915}
+  m_Size: {x: 0.4688058, y: 0.9320135}
   m_EdgeRadius: 0
 --- !u!95 &859767561937633659
 Animator:
@@ -281,11 +281,11 @@ MonoBehaviour:
   homePosition: {x: 5, y: -11}
   deathEffect: {fileID: 2989198635459751573, guid: d5637ba8be267684fb60a997700264b7,
     type: 3}
-  thisLoot: {fileID: 11400000, guid: 792a328f94dad4a4ebc6f97e87ca18ff, type: 2}
+  thisLoot: {fileID: 11400000, guid: a7fc3b0fe0888f54bb4659e0c1524a20, type: 2}
   myRigidbody: {fileID: 859767561937633654}
   target: {fileID: 0}
   chaseRadius: 6
-  attackRadius: 1.5
+  attackRadius: 1.2
   anim: {fileID: 859767561937633659}
 --- !u!114 &859767561937633653
 MonoBehaviour:
@@ -313,7 +313,7 @@ GameObject:
   - component: {fileID: 859767562226541588}
   - component: {fileID: 859767562226541586}
   - component: {fileID: 859767562226541589}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: left hitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -390,7 +390,7 @@ GameObject:
   - component: {fileID: 859767562423793080}
   - component: {fileID: 859767562423793078}
   - component: {fileID: 859767562423793081}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: up hitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -467,7 +467,7 @@ GameObject:
   - component: {fileID: 859767562592847571}
   - component: {fileID: 859767562592847569}
   - component: {fileID: 859767562592847568}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: right hitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}

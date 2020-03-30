@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemSprite: {fileID: -6998631668141411158, guid: 050bc504e80d22f41b7ac8051534149e,
     type: 3}
-  itemDescription: "\xA1A golden coin!"
+  itemDescription: A golden coin!
   isCoin: 1

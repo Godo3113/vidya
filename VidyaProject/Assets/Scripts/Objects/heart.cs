@@ -5,7 +5,7 @@ using UnityEngine;
 public class heart : Powerup
 {
     public FloatValue playerHealth;
-    //public FloatValue heartContainers;
+    public FloatValue heartContainers;
     public float amountToIncrease;
 
     // Start is called before the first frame update
@@ -14,19 +14,13 @@ public class heart : Powerup
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Player") && !other.isTrigger)
         {
-            if((playerHealth.RuntimeValue += amountToIncrease) >= playerHealth.initialValue)
+            if((playerHealth.RuntimeValue += amountToIncrease) >= heartContainers.RuntimeValue * 2f)
             {
-                playerHealth.RuntimeValue = playerHealth.initialValue;
+                playerHealth.RuntimeValue = heartContainers.RuntimeValue * 2f;
             }
             else
             {

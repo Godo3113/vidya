@@ -7,14 +7,36 @@ public class Inventory : ScriptableObject
 {
     public Item currentItem;
     public List<Item> items = new List<Item>();
-    public int numberOfCoins;
+    //public int numberOfCoins;
     public int coins;
+    public float maxMagic = 10;
+    public float currentMagic;
+
+    public void OnEnable()
+    {
+        currentMagic = maxMagic;
+    }
+
+    public void ReduceMagic(float magicCost)
+    {
+        currentMagic -= magicCost;
+    }
+
+    public bool CheckForItem(Item item)
+    {
+        if (items.Contains(item))
+        {
+            return true;
+        }
+        return false;
+    }
 
     public void AddItem(Item itemToAdd)
     {
         if (itemToAdd.isCoin)
         {
-            numberOfCoins++;
+            //numberOfCoins++;
+            coins ++;
         }
         else
         {

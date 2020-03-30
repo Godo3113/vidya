@@ -569,6 +569,7 @@ MonoBehaviour:
   playerInventory: {fileID: 11400000, guid: 18a084f66392c7a4eb765c9b159d17cc, type: 2}
   receivedItemSprite: {fileID: 0}
   playerHit: {fileID: 0}
+  projectile: {fileID: 0}
 --- !u!61 &1921387223222651963
 BoxCollider2D:
   m_ObjectHideFlags: 0

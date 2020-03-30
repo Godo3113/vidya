@@ -7,10 +7,10 @@ public class CoinTextManager : MonoBehaviour
 {
 
     public Inventory playerInventory;
-    public TextMeshProUGUI coindDisplay;
+    public TextMeshProUGUI coinDisplay;
 
     public void UpdateCoinCount()
     {
-        coindDisplay.text = "" + playerInventory.coins;
+        coinDisplay.text = "" + playerInventory.coins;
     }
 }

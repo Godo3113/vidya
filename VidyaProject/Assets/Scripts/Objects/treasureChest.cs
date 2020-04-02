@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class treasureChest : ContextTrigger
+public class treasureChest : Interactable
 {
     [Header("Contents")]
     public Item contents;

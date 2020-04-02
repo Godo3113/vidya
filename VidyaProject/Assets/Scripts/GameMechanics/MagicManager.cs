@@ -22,7 +22,7 @@ public class MagicManager : MonoBehaviour
         //magicSlider.value += 1;
         //playerInventory.currentMagic += 1;
         magicSlider.value = playerInventory.currentMagic;
-        if (magicSlider.value > magicSlider.maxValue)
+        if (magicSlider.value >= magicSlider.maxValue)
         {
             magicSlider.value = magicSlider.maxValue;
             playerInventory.currentMagic = playerInventory.maxMagic;

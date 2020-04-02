@@ -9,12 +9,18 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/HouseInterior.unity
-    guid: 0dd32634b4aeab54b9b9602c329d1b4e
+    path: Assets/Scenes/StartMenu.unity
+    guid: 83dd7834528d4d24190a86615a64a187
   - enabled: 1
     path: Assets/Scenes/MainWorld.unity
     guid: b7f630b6048ba194bbbca7601bbf943e
   - enabled: 1
+    path: Assets/Scenes/HouseInterior.unity
+    guid: 0dd32634b4aeab54b9b9602c329d1b4e
+  - enabled: 1
     path: Assets/Scenes/Cave.unity
     guid: 0359897cddb9bee43a54d64a601258f0
+  - enabled: 1
+    path: Assets/Scenes/TestScene.unity
+    guid: b449d232a764a21408bdf963f23e285f
   m_configObjects: {}

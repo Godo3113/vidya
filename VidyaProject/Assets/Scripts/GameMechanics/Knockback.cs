@@ -14,6 +14,12 @@ public class Knockback : MonoBehaviour
         {
             other.GetComponent<pot>().Smash();
         }
+
+        if (other.gameObject.CompareTag("building") && this.gameObject.CompareTag("enemy"))
+        {
+            other.GetComponent<Building>().Knock(damage);
+        }
+
         if (other.gameObject.CompareTag("enemy") || other.gameObject.CompareTag("Player"))
         {
             Rigidbody2D hit = other.GetComponent<Rigidbody2D>();
@@ -25,8 +31,8 @@ public class Knockback : MonoBehaviour
 
                 if (other.gameObject.CompareTag("enemy") && other.isTrigger)
                 {
-                    hit.GetComponent<Enemy>().currentState = EnemyState.stagger;
-                    other.GetComponent<Enemy>().Knock(hit, knockTime, damage);
+                    hit.GetComponent<EnemyMaster>().currentState = EnemyState.stagger;
+                    other.GetComponent<EnemyMaster>().Knock(hit, knockTime, damage);
                 }
                 if (other.gameObject.CompareTag("Player"))
                 {
@@ -46,7 +52,7 @@ public class Knockback : MonoBehaviour
         {
             yield return new WaitForSeconds(knockTime);
             enemy.velocity = Vector2.zero;
-            enemy.GetComponent<Enemy>().currentState = EnemyState.idle;
+            enemy.GetComponent<EnemyMaster>().currentState = EnemyState.idle;
         }
     }
 }

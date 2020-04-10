@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 231e6705fcc02d7429694c700e81fa23, type: 3}
+  m_Name: 100Coin
+  m_EditorClassIdentifier: 
+  loots:
+  - thisLoot: {fileID: 472580979508680165, guid: 2a8e3a4a776b5364b82de5eb40e241bf,
+      type: 3}
+    lootChance: 100

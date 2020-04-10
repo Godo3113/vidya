@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AreaEnemy : log
+public class AreaEnemy : EnemyMovement
 {
     public Collider2D boundary;
 

@@ -23,8 +23,16 @@ public class PlayerMovement : MonoBehaviour
 	public VectorValue startingPosition;
 	public Inventory playerInventory;
 	public SpriteRenderer receivedItemSprite;
-	public Signal playerHit;
+	//public Signal playerHit; // Signal for the old camera system
 	public Signal reduceMagic;
+
+	[Header("IFrames")]
+	public Color flashColor;
+	public Color regularColor;
+	public float flashDuration;
+	public int numberOfFlashes;
+	public Collider2D triggerCollider;
+	public SpriteRenderer mySprite;
 	
 	[Header("Projectiles")]
 	public GameObject projectile;
@@ -76,19 +84,21 @@ public class PlayerMovement : MonoBehaviour
 
 	}
 
+	// Main attack
 	private IEnumerator AttackCo()
     {
 		animator.SetBool("attacking", true);
 		currentState = PlayerState.attack;
 		yield return null;
 		animator.SetBool("attacking", false);
-		yield return new WaitForSeconds(.3f);
-		if(currentState != PlayerState.interact)
+		yield return new WaitForSeconds(.8f);
+		if (currentState != PlayerState.interact)
         {
 			currentState = PlayerState.walk;
 		}
     }
 
+	// Alternative attack
 	private IEnumerator AltAttackCo()
 	{
 		//animator.SetBool("attacking", true);
@@ -103,6 +113,7 @@ public class PlayerMovement : MonoBehaviour
 		}
 	}
 
+	// Generate arrow
 	private void MakeArrow()
     {
 		if(playerInventory.currentMagic > 0)
@@ -166,7 +177,7 @@ public class PlayerMovement : MonoBehaviour
 			transform.position + change * speed * Time.deltaTime);
     }
 
-	// Knockback
+	// Apply damage coroutine
 	public void Knock(float knockTime, float damage)
     {
 		currentHealth.RuntimeValue -= damage;
@@ -183,15 +194,33 @@ public class PlayerMovement : MonoBehaviour
 		
     }
 
+	// Knockback coroutine
 	private IEnumerator KnockCo(float knockTime)
 	{
-		playerHit.Raise(); // For the screen kick animation
+		//playerHit.Raise(); // For the old screen kick animation
 		if (myRigidbody != null)
 		{
+			StartCoroutine(FlashCo()); // Invulnerability frames
 			yield return new WaitForSeconds(knockTime);
 			myRigidbody.velocity = Vector2.zero;
 			currentState = PlayerState.idle;
 			myRigidbody.velocity = Vector2.zero;
 		}
+	}
+
+	// Invulnerability frames coroutine
+	private IEnumerator FlashCo()
+    {
+		int temp = 0;
+		triggerCollider.enabled = false;
+		while(temp < numberOfFlashes)
+        {
+			mySprite.color = flashColor;
+			yield return new WaitForSeconds(flashDuration);
+			mySprite.color = regularColor;
+			yield return new WaitForSeconds(flashDuration);
+			temp++;
+        }
+		triggerCollider.enabled = true;
 	}
 }

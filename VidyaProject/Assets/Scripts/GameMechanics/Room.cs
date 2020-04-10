@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Room : MonoBehaviour
 {
-    public Enemy[] enemies;
+    public EnemyMaster[] enemies;
     public pot[] pots;
     public GameObject virtualCamera;
 

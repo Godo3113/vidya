@@ -20,7 +20,7 @@ public class Knockback : MonoBehaviour
             other.GetComponent<Building>().Knock(damage);
         }
 
-        if (other.gameObject.CompareTag("enemy") || other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("enemy") || other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("ally"))
         {
             Rigidbody2D hit = other.GetComponent<Rigidbody2D>();
             if(hit !=null)
@@ -29,7 +29,7 @@ public class Knockback : MonoBehaviour
                 difference = difference.normalized * thrust;
                 hit.AddForce(difference, ForceMode2D.Impulse);
 
-                if (other.gameObject.CompareTag("enemy") && other.isTrigger)
+                if (other.gameObject.CompareTag("enemy") || other.gameObject.CompareTag("ally") && other.isTrigger)
                 {
                     hit.GetComponent<EnemyMaster>().currentState = EnemyState.stagger;
                     other.GetComponent<EnemyMaster>().Knock(hit, knockTime, damage);

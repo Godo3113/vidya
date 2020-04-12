@@ -45,6 +45,11 @@ public class Building : MonoBehaviour
         //StartCoroutine(KnockCo(myRigidbody, knockTime));
         TakeDamage(damage);
     }
+    // Sprite renderer height
+   // public void OnLateUpdate()
+    //{
+        //order_in_layer = pos.Y + 5;
+    //}
 
     // Start is called before the first frame update
     void Start()
